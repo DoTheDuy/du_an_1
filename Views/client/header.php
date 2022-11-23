@@ -39,16 +39,16 @@
 <!-- Add your site or application content here -->
 
 <!-- pre loader area start-->
-<!--<div id="loading">-->
-<!--    <div id="loading-center">-->
-<!--        <div id="loading-center-absolute">-->
-<!--            <div class="loading-icon text-center d-flex flex-column align-items-center justify-content-center">-->
-<!--                <img src="Views/client/assets/img/logo/logo-text.png" alt="logo-img">-->
-<!--                <img class="loading-logo" src="Views/client/assets/img/logo/preloader.svg" alt="">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="loading-icon text-center d-flex flex-column align-items-center justify-content-center">
+                <img src="Views/client/assets/img/logo/logo-text.png" alt="logo-img">
+                <img class="loading-logo" src="Views/client/assets/img/logo/preloader.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 <!-- pre loader area end-->
 
 <!-- cart mini area start -->
@@ -229,7 +229,7 @@
                                     <div class="dropdown-category">
                                         <nav>
                                             <ul>
-                                                <li class="item-has-children"><a href="course.html">Development</a>
+                                                <li class="item-has-children"><a href="course.php">Development</a>
                                                     <!-- <ul class="category-submenu">
                                                        <li><a href="course.html">All Development</a></li>
                                                        <li><a href="course.html">Mobile App</a></li>
@@ -239,7 +239,7 @@
                                                        <li><a href="course.html">Programming language</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li class="item-has-children"><a href="course.html">Art & Design</a>
+                                                <li class="item-has-children"><a href="course.php">Art & Design</a>
                                                     <!-- <ul class="category-submenu">
                                                        <li><a href="course.html">Web Design</a></li>
                                                        <li><a href="course.html">Graphic Design</a></li>
@@ -248,7 +248,7 @@
                                                        <li><a href="course.html">Marketing</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li class="item-has-children"><a href="course.html">Business</a>
+                                                <li class="item-has-children"><a href="course.php">Business</a>
                                                     <!-- <ul class="category-submenu">
                                                        <li><a href="course.html">All Business</a></li>
                                                        <li><a href="course.html">Communications</a></li>
@@ -257,7 +257,7 @@
                                                        <li><a href="course.html">Sales</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li class="item-has-children"><a href="course.html">Life Style</a>
+                                                <li class="item-has-children"><a href="course.php">Life Style</a>
                                                     <!-- <ul class="category-submenu">
                                                        <li><a href="course.html">Life Style</a></li>
                                                        <li><a href="course.html">Mental Health</a></li>
@@ -266,7 +266,7 @@
                                                        <li><a href="course.html">Nutrition</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li class="item-has-children"><a href="course.html">Health & Fitness</a>
+                                                <li class="item-has-children"><a href="course.php">Health & Fitness</a>
                                                     <!-- <ul class="category-submenu">
                                                        <li><a href="course.html">All Health & Fitness</a></li>
                                                        <li><a href="course.html">Beauty & Makeup</a></li>
@@ -274,9 +274,9 @@
                                                        <li><a href="course.html">Good Food</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li><a href="course.html">Data Science</a></li>
-                                                <li><a href="course.html">Marketing</a></li>
-                                                <li><a href="course.html">Photography</a></li>
+                                                <li><a href="course.php">Data Science</a></li>
+                                                <li><a href="course.php">Marketing</a></li>
+                                                <li><a href="course.php">Photography</a></li>
                                             </ul>
                                         </nav>
                                     </div>
