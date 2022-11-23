@@ -4,25 +4,25 @@ include "Views/client/header.php";
         $act=$_GET['act'];
         switch ($act) {
             case 'course':
-                include  "Views/client/course.php";;
+                include  "Views/client/course.php";
                 break;
             case 'cart':
-                $VIEW_NAME = cart.php;
+                include  "Views/client/cart.php";
                 break;
             case 'instructor':
-                $VIEW_NAME = instructor.php;
+                include  "Views/client/instructor.php";
                 break;
-            case 'zoom-class':
-                $VIEW_NAME = zoom_class.php;
+            case 'zoom_class':
+                include  "Views/client/zoom_class.php";
                 break;
             case 'about':
-                $VIEW_NAME = about.php;
+                include  "Views/client/about.php";
                 break;
             case 'register':
-                $VIEW_NAME = register.php;
+                include  "Views/client/register.php";
                 break;
             default:
-                $VIEW_NAME = home.php;
+                include  "Views/client/home.php";
                 break;
         }
     }else{

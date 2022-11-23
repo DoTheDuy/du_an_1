@@ -1,8 +1,9 @@
 
 
-   <main>
+   <main style="margin-top: 100px" >
+
       <!-- hero-area-start -->
-      <div class="hero-arera course-item-height" data-background="assets/img/slider/course-slider.jpg">
+      <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
          <div class="container">
             <div class="row">
                <div class="col-xl-12">
@@ -12,7 +13,7 @@
                   <div class="course-title-breadcrumb">
                      <nav>
                         <ol class="breadcrumb">
-                           <li class="breadcrumb-item"><a href="footer.php">Home</a></li>
+                           <li class="breadcrumb-item"><a href="/du_an_1">Home</a></li>
                            <li class="breadcrumb-item"><span>About us</span></li>
                         </ol>
                      </nav>
@@ -58,23 +59,23 @@
                      <div class="shap-02">
                      </div>
                      <div class="shap-03">
-                        <img src="assets/img/shape/student-shape-03.png" alt="image not found">
+                        <img src="Views/client/assets/img/shape/student-shape-03.png" alt="image not found">
                      </div>
                      <div class="shap-04">
-                        <img src="assets/img/shape/student-shape-04.png" alt="image not found">
+                        <img src="Views/client/assets/img/shape/student-shape-04.png" alt="image not found">
                      </div>
                      <div class="shap-05">
-                        <img src="assets/img/shape/student-shape-05.png" alt="image not found">
+                        <img src="Views/client/assets/img/shape/student-shape-05.png" alt="image not found">
                      </div>
                      <div class="shap-06">
-                        <img src="assets/img/shape/student-shape-06.png" alt="image not found">
+                        <img src="Views/client/assets/img/shape/student-shape-06.png" alt="image not found">
                      </div>
                      <div class="shap-07">
-                        <img src="assets/img/shape/student-shape-07.png" alt="image not found">
+                        <img src="Views/client/assets/img/shape/student-shape-07.png" alt="image not found">
                      </div>
 
                      <div class="student-choose-thumb">
-                        <img src="assets/img/student-choose/student.png" alt="image not found">
+                        <img src="Views/client/assets/img/student-choose/student.png" alt="image not found">
                      </div>
                   </div>
                </div>
@@ -244,17 +245,17 @@
                   <div class="">
                      <div class="features-video-wrapper">
                         <div class="features-shape-wrapper-1">
-                           <img class="features-shape" src="assets/img/shape/features-shape.png" alt="features-shape">
+                           <img class="features-shape" src="Views/client/assets/img/shape/features-shape.png" alt="features-shape">
                            Get <span>help</span> from <br> this video
 
                         </div>
                         <div class="features-shape-werapper-2">
                            <span>65k+</span> <br>views daily
-                           <img class="features-shape-2" src="assets/img/shape/features-shape-2.png"
+                           <img class="features-shape-2" src="Views/client/assets/img/shape/features-shape-2.png"
                               alt="features-shape-2">
                         </div>
                         <div class="reatures-video-thumb">
-                           <img src="assets/img/features/features.jpg" alt="features-img">
+                           <img src="Views/client/assets/img/features/features.jpg" alt="features-img">
                         </div>
                         <div class="features-video-content">
                            <div class="features-btn">
@@ -519,7 +520,7 @@
                   <div class="col-xl-4 col-lg-4 col-md-6">
                      <div class="know-us-wrapper mb-30">
                         <div class="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-06.jpg" alt="know-us-img"></a>
+                           <a href="#"><img src="Views/client/assets/img/gallery/gallary-06.jpg" alt="know-us-img"></a>
                         </div>
                         <div class="know-us-text text-center">
                            <a href="#">
@@ -531,7 +532,7 @@
                   <div class="col-xl-4 col-lg-4 col-md-6">
                      <div class="know-us-wrapper mb-30">
                         <div class="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-07.jpg" alt="know-us-img"></a>
+                           <a href="#"><img src="Views/client/assets/img/gallery/gallary-07.jpg" alt="know-us-img"></a>
                         </div>
                         <div class="know-us-text text-center">
                            <a href="#">
@@ -543,7 +544,7 @@
                   <div class="col-xl-4 col-lg-4 col-md-6">
                      <div class="know-us-wrapper mb-30">
                         <div class="know-us-better-thumb">
-                           <a href="#"><img src="assets/img/gallery/gallary-08.jpg" alt="know-us-img"></a>
+                           <a href="#"><img src="Views/client/assets/img/gallery/gallary-08.jpg" alt="know-us-img"></a>
                         </div>
                         <div class="know-us-text text-center">
                            <a href="#">
@@ -580,34 +581,34 @@
                <div class="col-xl-12">
                   <div class="affiliates-wrapper">
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-01.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-01.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-02.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-02.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-03.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-03.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-04.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-04.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-05.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-05.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-06.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-06.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-07.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-07.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-08.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-08.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-09.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-09.png" alt="affiliates-img">
                      </div>
                      <div class="singel-affiliates-img">
-                        <img src="assets/img/brand/partner-10.png" alt="affiliates-img">
+                        <img src="Views/client/assets/img/brand/partner-10.png" alt="affiliates-img">
                      </div>
                   </div>
                </div>

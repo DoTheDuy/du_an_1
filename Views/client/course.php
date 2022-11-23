@@ -1,5 +1,5 @@
 
-   <main>
+   <main  style="margin-top: 100px">
 
       <!-- hero-area-start -->
       <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">

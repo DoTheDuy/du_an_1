@@ -1,7 +1,7 @@
 
-    <main>
+    <main  style="margin-top: 100px">
         <!-- hero-area-start -->
-        <div class="hero-arera course-item-height" data-background="assets/img/slider/course-slider.jpg">
+        <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -43,7 +43,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="product-thumbnail"><a href="course-details.html"><img
-                                                    src="assets/img/products/product-thumb-01.png" alt=""></a></td>
+                                                    src="Views/client/assets/img/products/product-thumb-01.png" alt=""></a></td>
                                         <td class="product-name"><a href="course-details.html">Turn Yourself</a></td>
                                         <td class="product-price"><span class="amount">$24.00</span></td>
                                         <td class="product-quantity text-center">
@@ -62,7 +62,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="course-details.html"><img
-                                                    src="assets/img/products/product-thumb-02.png" alt=""></a></td>
+                                                    src="Views/client/assets/img/products/product-thumb-02.png" alt=""></a></td>
                                         <td class="product-name"><a href="course-details.html">Art of Not Giving</a>
                                         </td>
                                         <td class="product-price"><span class="amount">$12.00</span></td>
@@ -82,7 +82,7 @@
                                     </tr>
                                     <tr>
                                         <td class="product-thumbnail"><a href="course-details.html"><img
-                                                    src="assets/img/products/product-thumb-03.png" alt=""></a></td>
+                                                    src="Views/client/assets/img/products/product-thumb-03.png" alt=""></a></td>
                                         <td class="product-name"><a href="course-details.html">Attract Women</a></td>
                                         <td class="product-price"><span class="amount">$42.00</span></td>
                                         <td class="product-quantity text-center">
