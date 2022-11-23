@@ -3,7 +3,7 @@ if (isset($_POST['btn-send'])) {
     $email = $_POST['email'];
     $result = checkEmail($email);
     if (is_array($result)){
-        $message = "Mật khẩu của bạn là: ".$result['mat_khau'];
+        $message = "Mật khẩu của bạn là: ".$result['password'];
     } else {
         $message = "Email không hợp lệ";
     }

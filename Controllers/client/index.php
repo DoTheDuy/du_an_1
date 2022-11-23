@@ -1,69 +1,34 @@
 <?php
-require "Models/client/index.php";
-    $page = isset($_GET["page"]) ? $_GET["page"] : "home";
-    $loai_khoa_hoc = get_all_loai_khoa_hoc();
-    // $all_10_khoa_hoc = loadall_pro_top10();
-    switch ($page){
-        case "home":
-            // $product_specials = get_product_special();
-            // $khoa_hoc = get_9_product_new();
-            $VIEW_NAME = "home.php";
-            break;
-        case "product":
-            if(isset($_GET['category'])) {
-                $ma_loai = $_GET['category'];
-                $results = get_product_by_category($ma_loai);
-            } else {
-                $results = get_all_product();
-            }
-            $VIEW_NAME = "product.php";
-            break;
-        case "detail":
-            if(isset($_GET['idPro'])) {
-                $id = $_GET['idPro'];
-                $row = get_one_product($id);
-            }
-            $VIEW_NAME = "detail.php";
-            break;
-        case "introduce":
-            $VIEW_NAME = "introduce.php";
-            break;
-        case "contact":
-            $VIEW_NAME = "contact.php";
-            break;
-        case "feedback":
-            $VIEW_NAME = "feedback.php";
-            break;
-        case "hoidap":
-            $VIEW_NAME = "q&a.php";
-            break;
-        case "register":
-            $VIEW_NAME = "register.php";
-            break;
-        case "quenmk":
-            $VIEW_NAME = "quenmk.php";
-            break;
-        case "giangvien":
-            $VIEW_NAME = "giangvien.php";
-            break;    
-        case "capnhattk":
-            $VIEW_NAME = "capnhattk.php";
-            break;
-        case "lop" :
-            $VIEW_NAME ="lop.php";
-            break;
-        case "cart":
-            if(isset($_GET['deleteId'])) {
-                session_start();
-                $index = $_GET['deleteId'];
-                unset($_SESSION['mycart'][$index]);
-                header("Location: ?page=cart");
-            }
-            $VIEW_NAME = "cart.php";
-            break;
-        default:
-        echo '<h1>404 not found</h1>';
-            break;
-    }
-    require "Views/client/layout.php";
+//include "Models/client/index.php";
+include "Views/client/header.php";
+//    if ((isset($_GET['act']))&&($_GET['act']!="")){
+//        $act=$_GET['act'];
+//        switch ($act) {
+//            case "course":
+//                include "Views/client/course.php";
+//                break;
+//            case "cart":
+//                include "Views/client/cart.php";
+//                break;
+//            case "instructor":
+//                include "Views/client/instructor.php";
+//                break;
+//            case "zoom-class":
+//                include "Views/client/zoom-class.php";
+//                break;
+//            case "about":
+//                include "Views/client/about.php";
+//                break;
+//            case "lop" :
+//                $VIEW_NAME = "lop.php";
+//                break;
+//            default:
+//                include "Views/client/home.php";
+//                break;
+//        }
+//    }else{
+        include "Views/client/home.php";
+//}
+    include "Views/client/footer.php";
+
 ?>

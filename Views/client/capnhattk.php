@@ -9,7 +9,7 @@ if (isset($_POST['btn-edit'])) {
     $message = "Cập nhật tài khoản thành công!!";
 }
 
-$row = get_one_user($ma_khach_hang);
+$row = get_one_user($id);
 
 ?>
 
@@ -19,14 +19,14 @@ $row = get_one_user($ma_khach_hang);
     </div>
     <form class="d-flex flex-column gap-3 needs-validation" action="" method="post">
         <div class="w-100">
-            <label for="validationCustom01" class="form-label">Tên khách hàng  </label>
-            <input type="text" class="form-control" name="ten_khach_hang" id="validationCustom01" value="<?php echo $row['ten_khach_hang'] ?>" required>
+            <label for="validationCustom01" class="form-label">Username</label>
+            <input type="text" class="form-control" name="ma_khach_hang" id="validationCustom01" value="<?php echo $row['ma_khach_hang'] ?>" required>
             <div class="valid-feedback">
-                Please choose a name.
+                Please choose a username.
             </div>
         </div>
         <div class="w-100">
-            <label for="validationCustom03" class="form-label">Email </label>
+            <label for="validationCustom03" class="form-label">Email</label>
             <input type="text" class="form-control" name="email" id="validationCustom03" value="<?php echo $row['email'] ?>" required>
             <div class="valid-feedback">
                 Please choose a Email.

@@ -140,7 +140,7 @@
             <div class="offset-widget offset-logo mb-40">
                <div class="row align-items-center">
                   <div class="col-9">
-                     <a href="layout.php">
+                     <a href="footer.php">
                         <img src="assets/img/logo/logo-black.png" alt="Logo">
                      </a>
                   </div>
@@ -204,7 +204,7 @@
                   <div class="col-xl-7 col-lg-7 col-md-5 col-sm-9 col-9">
                      <div class="header-left d-flex align-items-center">
                         <div class="header-logo">
-                           <a href="layout.php"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
+                           <a href="footer.php"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
                         </div>
                         <div class="category-menu d-none d-xxl-block">
                            <div class="Category-click">
@@ -298,7 +298,7 @@
                         <div class="main-menu d-none d-xl-block">
                            <nav id="mobile-menu">
                               <ul>
-                                 <li class="menu-item-has-children"><a href="layout.php">Home</a>
+                                 <li class="menu-item-has-children"><a href="footer.php">Home</a>
                                     <!-- <ul class="sub-menu">
                                        <li><a href="layout.php">Home 1</a></li>
                                        <li><a href="index-2.html">Home 2</a></li>
@@ -439,7 +439,7 @@
                   <div class="course-title-breadcrumb">
                      <nav>
                         <ol class="breadcrumb">
-                           <li class="breadcrumb-item"><a href="layout.php">Home</a></li>
+                           <li class="breadcrumb-item"><a href="footer.php">Home</a></li>
                            <li class="breadcrumb-item"><span>Courses</span></li>
                            <li class="breadcrumb-item active" aria-current="page">instructor</li>
                         </ol>
@@ -865,7 +865,7 @@
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <div class="footer-widget f-w1 mb-40">
                         <div class="footer-img">
-                           <a href="layout.php"> <img src="assets/img/logo/footer-logo.png" alt="footer-logo"></a>
+                           <a href="footer.php"> <img src="assets/img/logo/footer-logo.png" alt="footer-logo"></a>
                            <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as
                               best
                               plans to knowledge.</p>

@@ -29,5 +29,6 @@
             break;
     }
     require "Views/admin/layout.php";
+
     
 ?>
