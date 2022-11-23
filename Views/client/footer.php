@@ -135,11 +135,29 @@
    </footer>
    <!-- footer-area-end -->
 
+   <?php
+   session_start();
+   if (isset($_POST['btn-login'])) {
+       $ten_khach_hang = $_POST['ten_khach_hang'];
+       $mat_khau = $_POST['mat_khau'];
+       $checkuser = checkuser($ten_khach_hang, $mat_khau);
+       if(is_array($checkuser)){
+           $_SESSION['user'] = $checkuser;
+       }else{
+           $thongbao = "Tài khoản không tồn tại vui lòng kiểm tra HOẶC đăng kí mới";
+       }
+   }
+
+   if (isset($_POST['exit'])) {
+       session_unset();
+   }
+   ?>
+
    <!-- sigin-area sart-->
    <div class="signin-area">
       <div class="signin-area-wrapper">
          <div class="signup-box text-center">
-            <div class="signup-text">
+            <div class="signup-text" >
                <h3>Sign in</h3>
             </div>
             <div class="signup-thumb">
@@ -147,7 +165,7 @@
             </div>
          </div>
          
-         <div class="signup-form-wrapper">
+         <div class="signup-form-wrapper" chuc_nang="alert">
             <div class="signup-wrapper">
                <input type="text" placeholder="Email or Username">
             </div>

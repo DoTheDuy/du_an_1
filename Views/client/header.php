@@ -383,7 +383,7 @@
                                 </div>
                             </div>
                             <div class="d-none d-md-block">
-                                <a class="user-btn-sign-up edu-btn" href="javascript:void(0)">Sign Up</a>
+                                <a class="user-btn-sign-up edu-btn" href="?page=register" name="btn-signUp">Sign Up</a>
                             </div>
                             <div class="menu-bar d-xl-none ml-20">
                                 <a class="side-toggle" href="javascript:void(0)">
