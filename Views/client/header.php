@@ -38,7 +38,7 @@
 
 <!-- Add your site or application content here -->
 
- pre loader area start
+<!-- pre loader area start-->
 <!--<div id="loading">-->
 <!--    <div id="loading-center">-->
 <!--        <div id="loading-center-absolute">-->
@@ -49,7 +49,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
- pre loader area end
+<!-- pre loader area end-->
 
 <!-- cart mini area start -->
 <div class="cartmini__area">
@@ -141,7 +141,7 @@
             <div class="offset-widget offset-logo mb-40">
                 <div class="row align-items-center">
                     <div class="col-9">
-                        <a href="footer.php">
+                        <a href="Controllers/client/index.php">
                             <img src="Views/client/assets/img/logo/logo-black.png" alt="Logo">
                         </a>
                     </div>
@@ -191,7 +191,7 @@
                     <div class="col-xl-7 col-lg-7 col-md-5 col-sm-9 col-9">
                         <div class="header-left d-flex align-items-center">
                             <div class="header-logo">
-                                <a href="Controller/client/index.php"><img src="Views/client/assets/img/logo/logo-black.png" alt="logo"></a>
+                                <a href="Controllers/client/index.php"><img src="Views/client/assets/img/logo/logo-black.png" alt="logo"></a>
                             </div>
                             <div class="category-menu d-none d-xxl-block">
                                 <div class="Category-click">

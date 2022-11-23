@@ -302,23 +302,23 @@
 
 
    <!-- JS here -->
-   <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-   <script src="assets/js/vendor/waypoints.min.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/swiper-bundle.min.js"></script>
-   <script src="assets/js/owl.carousel.min.js"></script>
-   <script src="assets/js/magnific-popup.min.js"></script>
-   <script src="assets/js/huicalendar.js"></script>
-   <script src="assets/js/parallax.min.js"></script>
-   <script src="assets/js/backToTop.js"></script>
-   <script src="assets/js/nice-select.min.js"></script>
-   <script src="assets/js/counterup.min.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/wow.min.js"></script>
-   <script src="assets/js/isotope.pkgd.min.js"></script>
-   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-   <script src="assets/js/main.js"></script>
+   <script src="Views/client/assets/js/vendor/jquery-3.6.0.min.js"></script>
+   <script src="Views/client/assets/js/vendor/waypoints.min.js"></script>
+   <script src="Views/client/assets/js/bootstrap.bundle.min.js"></script>
+   <script src="Views/client/assets/js/meanmenu.js"></script>
+   <script src="Views/client/assets/js/swiper-bundle.min.js"></script>
+   <script src="Views/client/assets/js/owl.carousel.min.js"></script>
+   <script src="Views/client/assets/js/magnific-popup.min.js"></script>
+   <script src="Views/client/assets/js/huicalendar.js"></script>
+   <script src="Views/client/assets/js/parallax.min.js"></script>
+   <script src="Views/client/assets/js/backToTop.js"></script>
+   <script src="Views/client/assets/js/nice-select.min.js"></script>
+   <script src="Views/client/assets/js/counterup.min.js"></script>
+   <script src="Views/client/assets/js/ajax-form.js"></script>
+   <script src="Views/client/assets/js/wow.min.js"></script>
+   <script src="Views/client/assets/js/isotope.pkgd.min.js"></script>
+   <script src="Views/client/assets/js/imagesloaded.pkgd.min.js"></script>
+   <script src="Views/client/assets/js/main.js"></script>
 </body>
 
 

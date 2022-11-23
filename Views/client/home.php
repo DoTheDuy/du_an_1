@@ -1,8 +1,8 @@
 
    <main>
       <!-- hero-area-sart -->
-      <section class="slider-area hero-height position-relative fix" data-background="assets/img/slider/Image.jpg">
-         <img class="shape-3 d-none d-xxl-block" src="assets/img/shape/shape-03.png" alt="image not found">
+      <section class="slider-area hero-height position-relative fix" data-background="Views/client/assets/img/slider/Image.jpg">
+         <img class="shape-3 d-none d-xxl-block" src="Views/client/assets/img/shape/shape-03.png" alt="image not found">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 col-lg-6 col-md-6">
@@ -20,11 +20,11 @@
                </div>
                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="hero-right position-relative">
-                     <img data-depth="0.2" class="shape shape-1" src="assets/img/shape/shape-01.png" alt="shape">
-                     <img data-depth="0.2" class="shape-2" src="assets/img/shape/shape-02.png" alt="shape">
+                     <img data-depth="0.2" class="shape shape-1" src="Views/client/assets/img/shape/shape-01.png" alt="shape">
+                     <img data-depth="0.2" class="shape-2" src="Views/client/assets/img/shape/shape-02.png" alt="shape">
                      <img class="shape-6" src="Views/client/assets/img/shape/slider-shape-6.png" alt="shape">
                      <div class="shape-4">
-                        <img class="" src="assets/img/shape/shape-04.png" alt="shape">
+                        <img class="" src="Views/client/assets/img/shape/shape-04.png" alt="shape">
                         <h5 class="hero-shape-text">Top Rated
                            Instructors</h5>
                      </div>
@@ -379,11 +379,11 @@
                      </div>
                      <div class="eduman-course-wraper">
                         <div class="eduman-course-heading">
-                           <a href="course.pph" class="course-link-color-1">Development</a>
+                           <a href="course.php" class="course-link-color-1">Development</a>
                            <span class="couse-star"><i class="fas fa-star"></i>4.9 (25)</span>
                         </div>
                         <div class="eduman-course-text">
-                           <h3><a href="course-details.html">WordPress Development Course for Plugins &amp; Themes</a>
+                           <h3><a href="course.php">WordPress Development Course for Plugins &amp; Themes</a>
                            </h3>
                         </div>
                         <div class="eduman-course-meta">
@@ -521,7 +521,7 @@
                         </div>
                      </div>
                      <div class="eduman-course-thumb w-img">
-                        <a href="course-details.html"><img src="assets/img/portfilo/course-img-03.jpg"
+                        <a href="course-details.html"><img src="Views/client/assets/img/portfilo/course-img-03.jpg"
                               alt="course-img"></a>
                      </div>
                      <div class="eduman-course-wraper">
@@ -538,7 +538,7 @@
                               <span class="price-now">FREE </span>
                            </div>
                            <div class="eduman-course-tutor">
-                              <img src="assets/img/portfilo/course-tutor-03.png" alt="image not found">
+                              <img src="Views/client/assets/img/portfilo/course-tutor-03.png" alt="image not found">
                               <a href="instructor-profile.html"><span>Junior Lucy</span></a>
                            </div>
                         </div>
@@ -594,7 +594,7 @@
                         </div>
                      </div>
                      <div class="eduman-course-thumb w-img">
-                        <a href="course-details.html"><img src="assets/img/portfilo/course-img-05.jpg"
+                        <a href="course-details.html"><img src="Views/client/assets/img/portfilo/course-img-05.jpg"
                               alt="course-img"></a>
                      </div>
                      <div class="eduman-course-wraper">
@@ -612,7 +612,7 @@
                               <del class="price-old">$75.50</del>
                            </div>
                            <div class="eduman-course-tutor">
-                              <img src="assets/img/portfilo/course-tutor-05.png" alt="image not found">
+                              <img src="Views/client/assets/img/portfilo/course-tutor-05.png" alt="image not found">
                               <a href="instructor-profile.html"><span>Edyal Romel</span></a>
                            </div>
                         </div>
@@ -669,7 +669,7 @@
                         </div>
                      </div>
                      <div class="eduman-course-thumb w-img">
-                        <a href="course-details.html"><img src="assets/img/portfilo/course-img-06.jpg"
+                        <a href="course-details.html"><img src="Views/client/assets/img/portfilo/course-img-06.jpg"
                               alt="course-img"></a>
                      </div>
                      <div class="eduman-course-wraper">
@@ -788,7 +788,7 @@
       <!-- portfolio main area end -->
 
       <!-- features-area-start-->
-      <div class="features-area pt-45 pb-15" data-background="assets/img/fact/fact.png">
+      <div class="features-area pt-45 pb-15" data-background="Views/client/assets/img/fact/fact.png">
          <div class="container">
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-6">
