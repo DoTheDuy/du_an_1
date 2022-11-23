@@ -333,7 +333,7 @@
                                              <li><a href="become-instructor.php">become instructor</a></li>
                                           </ul> -->
                                        </li>
-                                       <li class="menu-item-has-children"><a href="zoom-class.php">zoom class</a>
+                                       <li class="menu-item-has-children"><a href="zoom_class.php">zoom class</a>
                                           <!-- <ul class="sub-menu">
                                              <li><a href="zoom-class.php">zoom class</a></li>
                                              <li><a href="zoom-class-detalis.html">zoom class details</a></li>

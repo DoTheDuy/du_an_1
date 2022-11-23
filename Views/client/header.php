@@ -1,3 +1,20 @@
+<?php
+session_start();
+if (isset($_POST['btn-login'])) {
+    $ten_khach_hang = $_POST['ten_khach_hang'];
+    $mat_khau = $_POST['mat_khau'];
+    $checkuser = checkuser($ten_khach_hang, $mat_khau);
+    if(is_array($checkuser)){
+        $_SESSION['user'] = $checkuser;
+    }else{
+        $thongbao = "Tài khoản không tồn tại vui lòng kiểm tra HOẶC đăng kí mới";
+    }
+}
+
+if (isset($_POST['exit'])) {
+    session_unset();
+}
+?>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -141,7 +158,7 @@
             <div class="offset-widget offset-logo mb-40">
                 <div class="row align-items-center">
                     <div class="col-9">
-                        <a href="Controllers/client/index.php">
+                        <a aria-current="act" href="/du_an_1">
                             <img src="Views/client/assets/img/logo/logo-black.png" alt="Logo">
                         </a>
                     </div>
@@ -191,7 +208,7 @@
                     <div class="col-xl-7 col-lg-7 col-md-5 col-sm-9 col-9">
                         <div class="header-left d-flex align-items-center">
                             <div class="header-logo">
-                                <a href="Controllers/client/index.php"><img src="Views/client/assets/img/logo/logo-black.png" alt="logo"></a>
+                                <a aria-current="act" href="/du_an_1"><img src="Views/client/assets/img/logo/logo-black.png" alt="logo"></a>
                             </div>
                             <div class="category-menu d-none d-xxl-block">
                                 <div class="Category-click">
@@ -285,10 +302,10 @@
                             <div class="main-menu d-none d-xl-block">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="menu-item-has-children"><a href="Controllers/client/index.php">Home</a>
+                                        <li class="menu-item-has-children"><a aria-current="act" href="/du_an_1">Home</a>
 
                                         </li>
-                                        <li class="menu-item-has-children"><a href="Controllers/client/index.php?atc=course">Course</a>
+                                        <li class="menu-item-has-children"><a href="/du_an_1?act=course">Course</a>
                                             <!-- <ul class="sub-menu">
                                                <li><a href="course.html">Course 1</a></li>
                                                <li><a href="course-2.html">Course 2</a></li>
@@ -297,20 +314,20 @@
                                                <li><a href="course-details.html">course-details</a></li>
                                             </ul> -->
                                         </li>
-                                        <li class="menu-item-has-children"><a href="Controllers/client/index.php?atc=cart">cart</a>
+                                        <li class="menu-item-has-children"><a href="/du_an_1?act=cart">cart</a>
 
                                         </li>
                                         <li class="menu-item-has-children"><a href="#!">Pages</a>
                                             <ul class="sub-menu">
-                                                <li><a href="Controllers/client/index.php?atc=about.php">About</a></li>
-                                                <li class="menu-item-has-children"><a href="Controllers/client/index.php?atc=instructor">instructor</a>
+                                                <li><a href="/du_an_1?act=about.php">About</a></li>
+                                                <li class="menu-item-has-children"><a href="/du_an_1?act=instructor">instructor</a>
                                                     <!-- <ul class="sub-menu">
                                                        <li><a href="instructor.php">instructor</a></li>
                                                        <li><a href="instructor-profile.html">instructor profile</a></li>
                                                        <li><a href="become-instructor.php">become instructor</a></li>
                                                     </ul> -->
                                                 </li>
-                                                <li class="menu-item-has-children"><a href="Controllers/client/index.php?atc=zoom-class">zoom class</a>
+                                                <li class="menu-item-has-children"><a href="/du_an_1?act=zoom_class">zoom class</a>
                                                     <!-- <ul class="sub-menu">
                                                        <li><a href="zoom-class.php">zoom class</a></li>
                                                        <li><a href="zoom-class-detalis.html">zoom class details</a></li>
@@ -344,6 +361,9 @@
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="col-xl-5 col-lg-5 col-md-7 col-sm-3 col-3">
                         <div class="header-right d-flex align-items-center justify-content-end">
                             <div class="header-search d-none d-xxl-block mr-30">
@@ -383,7 +403,7 @@
                                 </div>
                             </div>
                             <div class="d-none d-md-block">
-                                <a class="user-btn-sign-up edu-btn" href="?page=register" name="btn-signUp">Sign Up</a>
+                                <a class="user-btn-sign-up edu-btn" href="javascript:void(0)">Sign Up</a>
                             </div>
                             <div class="menu-bar d-xl-none ml-20">
                                 <a class="side-toggle" href="javascript:void(0)">
@@ -395,6 +415,79 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signin-area">
+        <div class="signin-area-wrapper">
+            <div class="signup-box text-center">
+                <div class="signup-text" >
+                    <h3>Sign in</h3>
+                </div>
+                <div class="signup-thumb">
+                    <img src="Views/client/assets/img/sing-up/sign-up.png" alt="image not found">
+                </div>
+            </div>
+
+            <div class="signup-form-wrapper" chuc_nang="alert">
+                <div class="signup-wrapper">
+                    <input type="text" name="ten_khach_hang" value="" required  placeholder="Email or Username">
+                </div>
+                <div class="signup-wrapper">
+                    <input type="text" name="mat_khau" value="" required placeholder="Password">
+                </div>
+                <div class="signup-action">
+                    <div class="course-sidebar-list">
+                        <input class="signup-checkbo" type="checkbox" id="sing-in">
+                        <label class="sign-check" for="sing-in"><span>Remember me</span></label>
+                    </div>
+                </div>
+                <div class="sing-buttom mb-20">
+                    <button class="sing-btn" name="btn-login" type="submit" >Register now</button>
+                </div>
+                <div class="registered wrapper">
+                    <div class="not-register">
+                        <span>Not registered?</span><span><a href="#">Sign up</a></span>
+                    </div>
+                    <div class="forget-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="sign-social text-center">
+                    <span>Or Sign- in with</span>
+                </div>
+                <div class="sign-social-icon">
+                    <div class="sign-facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9.034" height="18.531" viewBox="0 0 9.034 18.531">
+                            <path id="Path_212" data-name="Path 212"
+                                  d="M183.106,757.2v-1.622c0-.811.116-1.274,1.39-1.274h1.621v-3.127h-2.664c-3.243,0-4.285,1.506-4.285,4.169v1.969h-2.085v3.127h1.969v9.265h4.054v-9.265h2.664l.347-3.243Z"
+                                  transform="translate(-177.083 -751.176)" fill="#2467ec" />
+                        </svg>
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="sign-gmail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.692" height="16.273" viewBox="0 0 21.692 16.273">
+                            <g id="gmail" transform="translate(0 -63.953)">
+                                <path id="Path_8685" data-name="Path 8685"
+                                      d="M1.479,169.418H4.93v-8.381l-2.26-3.946L0,157.339v10.6a1.479,1.479,0,0,0,1.479,1.479Z"
+                                      transform="translate(0 -89.192)" fill="#0085f7" />
+                                <path id="Path_8686" data-name="Path 8686"
+                                      d="M395.636,169.418h3.451a1.479,1.479,0,0,0,1.479-1.479v-10.6l-2.666-.248-2.264,3.946v8.381Z"
+                                      transform="translate(-378.874 -89.192)" fill="#00a94b" />
+                                <path id="Path_8687" data-name="Path 8687"
+                                      d="M349.816,65.436,347.789,69.3l2.027,2.541,4.93-3.7V66.176A2.219,2.219,0,0,0,351.2,64.4Z"
+                                      transform="translate(-333.054)" fill="#ffbc00" />
+                                <path id="Path_8688" data-name="Path 8688"
+                                      d="M72.7,105.365l-1.932-4.08L72.7,98.956l5.916,4.437,5.916-4.437v6.409L78.619,109.8Z"
+                                      transform="translate(-67.773 -33.52)" fill="#ff4131" fill-rule="evenodd" />
+                                <path id="Path_8689" data-name="Path 8689"
+                                      d="M0,66.176v1.972l4.93,3.7V65.436L3.55,64.4A2.219,2.219,0,0,0,0,66.176Z"
+                                      transform="translate(0)" fill="#e51c19" />
+                            </g>
+                        </svg>
+                        <a href="#">Google</a>
                     </div>
                 </div>
             </div>

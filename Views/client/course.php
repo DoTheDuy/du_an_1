@@ -2,7 +2,7 @@
    <main>
 
       <!-- hero-area-start -->
-      <div class="hero-arera course-item-height" data-background="assets/img/slider/course-slider.jpg">
+      <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
          <div class="container">
             <div class="row">
                <div class="col-xl-12">
@@ -371,7 +371,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-01.jpg" alt="courde-img">
+                              <img src="Views/client/assets/img/course/course-01.jpg" alt="courde-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -444,7 +444,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-02.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-02.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -516,7 +516,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-03.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-03.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -588,7 +588,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-04.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-04.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -660,7 +660,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-05.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-05.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -732,7 +732,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-06.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-06.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -804,7 +804,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-07.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-07.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -877,7 +877,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-08.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-08.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -949,7 +949,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-09.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-09.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1021,7 +1021,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-10.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-10.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1092,7 +1092,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-11.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-11.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1164,7 +1164,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-12.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-12.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1236,7 +1236,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-13.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-13.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1308,7 +1308,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-14.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-14.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
@@ -1380,7 +1380,7 @@
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="assets/img/course/course-15.jpg" alt="course-img">
+                              <img src="Views/client/assets/img/course/course-15.jpg" alt="course-img">
                            </div>
                            <div class="course-cart">
                               <div class="course-info-wrapper">
