@@ -1,6 +1,7 @@
-<main>
+
+<main style="margin-top: 100px">
     <!-- hero-area-start -->
-    <div class="hero-arera course-item-height" data-background="assets/img/slider/course-slider.jpg">
+    <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -29,7 +30,8 @@
                 <div class=" col-xxl-8 col-xl-8">
                     <div class="course-detalis-wrapper mb-30">
                         <div class="course-heading mb-20">
-                            <h2>MySQL Database : Beginner SQL Database Design</h2>
+                            <h2  > WordPress Development Course for Plugins & Themes</h2>
+
                             <div class="course-star">
                                 <ul>
                                     <li><i class="fas fa-star"></i></li>
@@ -52,7 +54,7 @@
                         <div class="course-detelis-meta">
                             <div class="course-meta-wrapper border-line-meta">
                                 <div class="course-meta-img">
-                                    <a href="instructor-profile.html"><img src="assets/img/course/course-meta.png"
+                                    <a href="instructor-profile.html"><img src="Views/client/assets/img/course/course-meta.png"
                                                                            alt="course-meta"></a>
                                 </div>
                                 <div class="course-meta-text">
@@ -389,7 +391,7 @@
                             <div class="instructors-heading">
                                 <div class="instructors-img w-img">
                                     <a href="instructor-profile.html"><img
-                                            src="assets/img/course/course-instructors.png"
+                                            src="Views/client/assets/img/course/course-instructors.png"
                                             alt="image not found"></a>
                                 </div>
                                 <div class="instructors-body">
@@ -536,7 +538,7 @@
                             </div>
                             <div class="course-review-item mb-30">
                                 <div class="course-reviews-img">
-                                    <a href="#"><img src="assets/img/course/course-reviews-1.png"
+                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-1.png"
                                                      alt="image not found"></a>
                                 </div>
                                 <div class="course-review-list">
@@ -560,7 +562,7 @@
                             </div>
                             <div class="course-review-item mb-30">
                                 <div class="course-reviews-img">
-                                    <a href="#"><img src="assets/img/course/course-reviews-2.png"
+                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-2.png"
                                                      alt="image not found"></a>
                                 </div>
                                 <div class="course-review-list">
@@ -581,7 +583,7 @@
                             </div>
                             <div class="course-review-item mb-30">
                                 <div class="course-reviews-img">
-                                    <a href="#"><img src="assets/img/course/course-reviews-3.png"
+                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-3.png"
                                                      alt="image not found"></a>
                                 </div>
                                 <div class="course-review-list">
@@ -654,7 +656,7 @@
                     <div class="course-video-widget">
                         <div class="course-widget-wrapper mb-30">
                             <div class="course-video-thumb w-img">
-                                <img src="assets/img/course/course-video.png" alt="image not found">
+                                <img src="Views/client/assets/img/course/course-video.png" alt="image not found">
                                 <div class="sidber-video-btn">
                                     <a class="popup-video" href="https://www.youtube.com/watch?v=F68sQYaS9XA"><i
                                             class="fas fa-play"></i></a>

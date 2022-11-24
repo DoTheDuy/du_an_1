@@ -152,7 +152,7 @@
                                 <div class="course-wrapper-2 mb-30">
 
                                     <div class="student-course-img">
-                                        <img src="Views/client/assets/img/course/<?php echo $value['hinh']?>" alt="courde-img">
+                                        <img src="Views/images/<?php echo $value['hinh']?>" alt="courde-img">
                                     </div>
                                     <div class="student-course-footer">
                                         <div class="student-course-linkter">
