@@ -1,9 +1,16 @@
 <?php
-include "Views/client/header.php";
+        include "Views/client/header.php";
+        include "Models/client/index.php";
     if((isset($_GET['act']))&&($_GET['act']!="")){
         $act=$_GET['act'];
         switch ($act) {
             case 'course':
+                if(isset($_GET['category'])) {
+                    $iddm = $_GET['category'];
+                    $results = get_product_by_category($iddm);
+                } else {
+                    $results = get_all_product();
+                }
                 include  "Views/client/course.php";
                 break;
             case 'cart':

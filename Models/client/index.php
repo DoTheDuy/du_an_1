@@ -24,17 +24,6 @@ function get_all_lop() {
     return $lop;
 }
 
-// function get_9_product_new() {
-//     $sql = "SELECT * FROM khoa_hoc WHERE 1 ORDER BY id DESC LIMIT 0,9";
-//     $khoa_hoc = getData($sql, "FETCH_ALL");
-//     return $khoa_hoc;
-// }
-// function get_product_special() {
-//     $sql_get_product_special = "SELECT * FROM products WHERE especially='true'";
-//     $product_specials = getData($sql_get_product_special, "FETCH_ALL");
-//     return $product_specials;
-// }
-
 function insert_account($ten_khach_hang, $email, $mat_khau,$dien_thoai){
     $sql = "INSERT INTO khach_hang(ten_khach_hang, email, mat_khau,dien_thoai) values('$ten_khach_hang', '$email', '$mat_khau','$dien_thoai')";
     getData($sql, '');

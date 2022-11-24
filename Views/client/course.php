@@ -141,7 +141,12 @@
                      </div>
                   </div>
                </div>
+
+
+
                <div class="col-xl-9 col-lg-8 col-md-12">
+                   <?php
+                   foreach ($results as $key => $value) { ?>
                   <div class="row">
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
@@ -151,22 +156,21 @@
                            <div class="student-course-footer">
                               <div class="student-course-linkter">
                                  <div class="portfolio-price">
-                                    <span>$12.57</span>
-                                    <del>$24.50</del>
+                                    <span><?php echo $value['don_gia']?></span>
+                                    <del><?php echo $value['gia_khuyen_mai']?></del>
                                  </div>
                               </div>
                               <div class="student-course-text">
-                                 <h3><a href="course-details.html">WordPress Development Course for Plugins & Themes</a>
+                                 <h3><a href="course-details.html"><?php echo $value['ten_khoa_hoc']?></a>
                                  </h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Danial</a>
-                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
+                      <?php } ?>
+
+
+
                      <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
