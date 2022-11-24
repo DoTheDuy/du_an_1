@@ -55,3 +55,6 @@
     </br>
 <?php echo isset($message) ? "<div class='alert alert-success' chuc_nang='alert'>".$message."</div>" : ""; ?>
 </div>
+<?php
+//    include  "Controllers/client/index.php";
+//?>

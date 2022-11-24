@@ -2,8 +2,8 @@
 require "Models/db.php";
     // Get All categoties
 function get_all_loai_khoa_hoc(){
-    $sql_get_categoty = "SELECT * FROM loai_khoa_hoc";
-    $loai_khoa_hoc = getData($sql_get_categoty, "FETCH_ALL");
+    $sql_get_category = "SELECT * FROM loai_khoa_hoc";
+    $loai_khoa_hoc = getData($sql_get_category, "FETCH_ALL");
     return $loai_khoa_hoc;
 }
 

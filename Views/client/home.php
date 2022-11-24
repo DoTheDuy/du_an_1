@@ -374,7 +374,7 @@
 <!--                        </div>-->
 <!--                     </div>-->
                      <div class="eduman-course-thumb w-img">
-                        <a href="course-details.html"><img src="Views/client/assets/img/portfilo/course-img-01.jpg"
+                        <a href="/du_an_1?act=course_detail"><img src="Views/client/assets/img/portfilo/course-img-01.jpg"
                               alt="course-img"></a>
                      </div>
                      <div class="eduman-course-wraper">

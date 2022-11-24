@@ -1,20 +1,3 @@
-<?php
-session_start();
-if (isset($_POST['btn-login'])) {
-    $ten_khach_hang = $_POST['ten_khach_hang'];
-    $mat_khau = $_POST['mat_khau'];
-    $checkuser = checkuser($ten_khach_hang, $mat_khau);
-    if(is_array($checkuser)){
-        $_SESSION['user'] = $checkuser;
-    }else{
-        $thongbao = "Tài khoản không tồn tại vui lòng kiểm tra HOẶC đăng kí mới";
-    }
-}
-
-if (isset($_POST['exit'])) {
-    session_unset();
-}
-?>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -246,54 +229,23 @@ if (isset($_POST['exit'])) {
                                     <div class="dropdown-category">
                                         <nav>
                                             <ul>
-                                                <li class="item-has-children"><a href="course.php">Development</a>
-                                                    <!-- <ul class="category-submenu">
-                                                       <li><a href="course.html">All Development</a></li>
-                                                       <li><a href="course.html">Mobile App</a></li>
-                                                       <li><a href="course.html">Web Development</a></li>
-                                                       <li><a href="course.html">Development tools</a></li>
-                                                       <li><a href="course.html">Database</a></li>
-                                                       <li><a href="course.html">Programming language</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="item-has-children"><a href="course.php">Art & Design</a>
-                                                    <!-- <ul class="category-submenu">
-                                                       <li><a href="course.html">Web Design</a></li>
-                                                       <li><a href="course.html">Graphic Design</a></li>
-                                                       <li><a href="course.html">Design tools</a></li>
-                                                       <li><a href="course.html">All Art</a></li>
-                                                       <li><a href="course.html">Marketing</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="item-has-children"><a href="course.php">Business</a>
-                                                    <!-- <ul class="category-submenu">
-                                                       <li><a href="course.html">All Business</a></li>
-                                                       <li><a href="course.html">Communications</a></li>
-                                                       <li><a href="course.html">Finance</a></li>
-                                                       <li><a href="course.html">Management</a></li>
-                                                       <li><a href="course.html">Sales</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="item-has-children"><a href="course.php">Life Style</a>
-                                                    <!-- <ul class="category-submenu">
-                                                       <li><a href="course.html">Life Style</a></li>
-                                                       <li><a href="course.html">Mental Health</a></li>
-                                                       <li><a href="course.html">Dieting</a></li>
-                                                       <li><a href="course.html">All Art</a></li>
-                                                       <li><a href="course.html">Nutrition</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li class="item-has-children"><a href="course.php">Health & Fitness</a>
-                                                    <!-- <ul class="category-submenu">
-                                                       <li><a href="course.html">All Health & Fitness</a></li>
-                                                       <li><a href="course.html">Beauty & Makeup</a></li>
-                                                       <li><a href="course.html">Food & Beverages</a></li>
-                                                       <li><a href="course.html">Good Food</a></li>
-                                                    </ul> -->
-                                                </li>
-                                                <li><a href="course.php">Data Science</a></li>
-                                                <li><a href="course.php">Marketing</a></li>
-                                                <li><a href="course.php">Photography</a></li>
+                                                    <?php foreach ($loai_khoa_hoc as $key => $value) { ?>
+                                                <a href="/du_an_1?act=course&category<?php echo $value['ma_loai'];?>" class="list-group-item list-group-item-action"><?php echo $value['ten_loai'];?></a>
+                                                <?php } ?>
+
+<!--                                                <li class="item-has-children"><a href="course.php">Development</a>-->
+<!--                                                </li>-->
+<!--                                                <li class="item-has-children"><a href="course.php">Art & Design</a>-->
+<!--                                                </li>-->
+<!--                                                <li class="item-has-children"><a href="course.php">Business</a>-->
+<!--                                                </li>-->
+<!--                                                <li class="item-has-children"><a href="course.php">Life Style</a>-->
+<!--                                                </li>-->
+<!--                                                <li class="item-has-children"><a href="course.php">Health & Fitness</a>-->
+<!--                                                </li>-->
+<!--                                                <li><a href="course.php">Data Science</a></li>-->
+<!--                                                <li><a href="course.php">Marketing</a></li>-->
+<!--                                                <li><a href="course.php">Photography</a></li>-->
                                             </ul>
                                         </nav>
                                     </div>
@@ -363,7 +315,6 @@ if (isset($_POST['exit'])) {
                     </div>
 
 
-
                     <div class="col-xl-5 col-lg-5 col-md-7 col-sm-3 col-3">
                         <div class="header-right d-flex align-items-center justify-content-end">
                             <div class="header-search d-none d-xxl-block mr-30">
@@ -405,6 +356,10 @@ if (isset($_POST['exit'])) {
                             <div class="d-none d-md-block">
                                 <a class="user-btn-sign-up edu-btn" href="javascript:void(0)">Sign Up</a>
                             </div>
+
+<!--                                Tài khoản-->
+<!--                            </h4>-->
+
                             <div class="menu-bar d-xl-none ml-20">
                                 <a class="side-toggle" href="javascript:void(0)">
                                     <div class="bar-icon">
@@ -420,5 +375,4 @@ if (isset($_POST['exit'])) {
             </div>
         </div>
     </div>
-
 </header>

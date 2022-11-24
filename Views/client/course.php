@@ -145,13 +145,15 @@
 
 
                <div class="col-xl-9 col-lg-8 col-md-12">
-                   <?php
-                   foreach ($results as $key => $value) { ?>
+
                   <div class="row">
+                      <?php
+                      foreach ($results as $key => $value) { ?>
                      <div class="col-xl-4 col-lg-6 col-md-6">
+
                         <div class="course-wrapper-2 mb-30">
                            <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-01.jpg" alt="courde-img">
+                              <img src="Views/images/<?php echo $value['hinh']; ?>" alt="courde-img">
                            </div>
                            <div class="student-course-footer">
                               <div class="student-course-linkter">
@@ -165,197 +167,22 @@
                                  </h3>
                               </div>
                            </div>
+                            <div class="portfolio-user">
+                                <div class="user-icon">
+                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Danial</a>
+                                </div>
+                                <div class="course-icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fal fa-star"></i>
+                                    <span>(25)</span>
+                                </div>
+                            </div>
                         </div>
                      </div>
                       <?php } ?>
-
-
-
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-02.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>FREE</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Write Better Emails: Tactics for Smarter Team
-                                       Communication</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Eduman</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-03.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$22.14</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Data Science Real-Life Data Science Exercises
-                                       Included</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Mark Hanry</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-04.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$147.00</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">MySQL Database : Beginner SQL Database Design</a>
-                                 </h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Danial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-05.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$21.00</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Python and Django Full Stack Web Developer
-                                       Bootcamp</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Junior Lucy</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-06.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$12.00</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Data Science Real-Life Data Science Exercises
-                                       Included</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Mark Hanry</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-07.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$48.00</span>
-                                    <del>$24.50</del>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Become a Super Human: Naturally & Safely Boost
-                                       Testosterone</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Edyal Romel</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-08.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>FREE</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Python and Django Full Stack Web Developer
-                                       Bootcamp</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="3.html"><i class="fas fa-user"></i>Junior Lucy</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="course-wrapper-2 mb-30">
-                           <div class="student-course-img">
-                              <img src="Views/client/assets/img/course/course-09.jpg" alt="course-img">
-                           </div>
-                           <div class="student-course-footer">
-                              <div class="student-course-linkter">
-                                 <div class="portfolio-price">
-                                    <span>$12.57</span>
-                                 </div>
-                              </div>
-                              <div class="student-course-text">
-                                 <h3><a href="course-details.html">Machine Learning Hands-On Python & R In Data
-                                       Science</a></h3>
-                              </div>
-                              <div class="portfolio-user">
-                                 <div class="user-icon">
-                                    <a href="instructor-profile.html"><i class="fas fa-user"></i>Danial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
 
                   <div class="row">
                      <div class="edu-pagination mt-30 mb-20">
