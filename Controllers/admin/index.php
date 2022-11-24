@@ -1,34 +1,30 @@
 <?php
+
     $page = isset($_GET["page"]) ? $_GET["page"] : "";
     switch ($page){
         case "category":
             require "category.php";
             break;
         case "product":
-            require "product.php";
+            include "product.php";
             break;
         case "user":
-            require "user.php";
+            include "user.php";
             break;
         case "comment":
-            require "comment.php";
+            include "comment.php";
             break;
-        // case "statistical":
-        //     require "Models/admin/statistical.php";
-        //     $results = get_all_statistical();
-        //     require "statistical.php";
-        //     break;
-        case "giangvien":
-            require "giangvien.php";
-            break;
+//        case "giangvien":
+//            require "giangvien.php";
+//            break;
         case "lop":
-                require "lop.php";
+            include "lop.php";
                 break;
         default:
             $VIEW_NAME = "home.php";
             break;
     }
-    require "Views/admin/layout.php";
+include "Views/admin/layout.php";
 
     
 ?>
