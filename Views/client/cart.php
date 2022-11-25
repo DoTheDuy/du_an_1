@@ -1,4 +1,4 @@
-
+<?php $tongtien = 0; ?>
     <main  style="margin-top: 100px">
         <!-- hero-area-start -->
         <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
@@ -24,9 +24,12 @@
 
 
         <!-- Cart Area Strat-->
+
         <section class="cart-area pt-100 pb-100">
             <div class="container">
                 <div class="row">
+                    <?php if(isset($_SESSION['mycart'])) {
+                    ?>
                     <div class="col-12">
                         <div class="table-content table-responsive">
                             <table class="table">
@@ -41,9 +44,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
                                     <tr>
+                                        <?php
+                                        foreach ($_SESSION['mycart'] as $key => $value){
+                                            $tongtien += $value[4];
+                                            ?>
                                         <td class="product-thumbnail"><a href="course-details.html"><img
-                                                    src="Views/client/assets/img/products/product-thumb-01.png" alt=""></a></td>
+                                                        src="Views/images/img/products/<?php echo $value[0];?>" alt=""></a></td>
                                         <td class="product-name"><a href="course-details.html">Turn Yourself</a></td>
                                         <td class="product-price"><span class="amount">$24.00</span></td>
                                         <td class="product-quantity text-center">
@@ -57,6 +65,7 @@
                                                 </div>
                                             </div>
                                         </td>
+                                        <?php }?>
                                         <td class="product-subtotal"><span class="amount">$24.00</span></td>
                                         <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
                                     </tr>
@@ -131,9 +140,11 @@
                             </div>
                         </div>
                     </div>
+                    <?php } else {echo 'Không có bất kỳ sản phẩm nào!';} ?>
                 </div>
             </div>
         </section>
+
         <!-- Cart Area End-->
 
     </main>

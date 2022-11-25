@@ -4,6 +4,7 @@ if(isset($_POST["btn-add"])){
     $ten_giang_vien = $_POST["ten_giang_vien"];
     $hinh_giang_vien = $_FILES["hinh_giang_vien"]["name"];
     $thong_tin_giang_vien = $_POST["thong_tin_giang_vien"];
+    $thong_tin_chi_tiet = $_POST["thong_tin_chi_tiet"];
     $trang_thai = $_POST["trang_thai"];
     if(isset($_FILES["hinh_giang_vien"])){
         $target_dir = "Views/images/";
@@ -30,7 +31,7 @@ if(isset($_POST["btn-add"])){
     }
     // Cau lenh insert add data
     if (!$error) {
-        add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien, $trang_thai);
+        add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai);
         $message = "Thêm thành công!";
     }
 }
@@ -56,7 +57,14 @@ if(isset($_POST["btn-add"])){
     </div>
     <div class="col-md-6">
         <label for="validationCustom06" class="form-label fw-bold">Thông tin</label>
-        <textarea name="thong_tin_giang_vien" class="form-control" id="validationCustom06" cols="30" rows="5" required></textarea>
+        <textarea name="thong_tin_giang_vien" class="form-control" id="validationCustom06" cols="30" rows="8" required></textarea>
+        <div class="invalid-feedback">
+            Vui lòng nhập thông tin
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom06" class="form-label fw-bold">Thông tin chi tiet</label>
+        <textarea name="thong_tin_chi_tiet" class="form-control" id="validationCustom06" cols="50" rows="8" required></textarea>
         <div class="invalid-feedback">
             Vui lòng nhập thông tin
         </div>

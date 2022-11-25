@@ -5,6 +5,7 @@ if(isset($_POST["btn-edit"])){
     $ten_giang_vien = $_POST["ten_giang_vien"];
     $hinh_giang_vien = $_FILES["hinh_giang_vien"]["name"];
     $thong_tin_giang_vien = $_POST["thong_tin_giang_vien"];
+    $thong_tin_chi_tiet = $_POST["thong_tin_chi_tiet"];
     $trang_thai = $_POST["trang_thai"];
 
     if(isset($_FILES["hinh_giang_vien"])){
@@ -32,7 +33,7 @@ if(isset($_POST["btn-edit"])){
     }
     // Cau lenh insert add data
     if (!$error) {
-        edit_giangvien($ma_giang_vien, $ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien, $trang_thai);
+        edit_giangvien($ma_giang_vien, $ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai);
         $message = "Sửa thành công!";
     }
 }
@@ -59,9 +60,16 @@ if(isset($_POST["btn-edit"])){
 
     <div class="col-md-6">
         <label for="validationCustom06" class="form-label fw-bold">Thông tin</label>
-        <textarea name="thong_tin_giang_vien" class="form-control" id="validationCustom06" cols="30" rows="5" required><?php echo $row['thong_tin_giang_vien']; ?></textarea>
+        <textarea name="thong_tin_giang_vien" class="form-control" id="validationCustom06" cols="50" rows="8" required><?php echo $row['thong_tin_giang_vien']; ?></textarea>
         <div class="invalid-feedback">
             Vui lòng nhập thông tin giảng viên 
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom06" class="form-label fw-bold">Thông tin chi tiet</label>
+        <textarea name="thong_tin_chi_tiet" class="form-control" id="validationCustom06" cols="50" rows="8" required><?php echo $row['thong_tin_chi_tiet']; ?></textarea>
+        <div class="invalid-feedback">
+            Vui lòng nhập thông tin giảng viên
         </div>
     </div>
     <div class="col-md-6">

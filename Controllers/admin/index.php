@@ -14,9 +14,9 @@
         case "comment":
             include "comment.php";
             break;
-//        case "giangvien":
-//            require "giangvien.php";
-//            break;
+        case "giangvien":
+            include "giangvien.php";
+            break;
         case "lop":
             include "lop.php";
                 break;

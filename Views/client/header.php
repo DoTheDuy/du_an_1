@@ -1,4 +1,8 @@
+<?php
 
+    include "Models/client/index.php";
+    $loai_khoa_hoc = get_all_loai_khoa_hoc();
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -229,23 +233,11 @@
                                     <div class="dropdown-category">
                                         <nav>
                                             <ul>
+                                                <li class="item-has-children">
                                                     <?php foreach ($loai_khoa_hoc as $key => $value) { ?>
-                                                <a href="/du_an_1?act=course&category<?php echo $value['ma_loai'];?>" class="list-group-item list-group-item-action"><?php echo $value['ten_loai'];?></a>
+                                                <a href="/du_an_1?act=course&category<?php echo $value['ma_loai'];?>" ><?php echo $value['ten_loai'];?></a>
                                                 <?php } ?>
-
-<!--                                                <li class="item-has-children"><a href="course.php">Development</a>-->
-<!--                                                </li>-->
-<!--                                                <li class="item-has-children"><a href="course.php">Art & Design</a>-->
-<!--                                                </li>-->
-<!--                                                <li class="item-has-children"><a href="course.php">Business</a>-->
-<!--                                                </li>-->
-<!--                                                <li class="item-has-children"><a href="course.php">Life Style</a>-->
-<!--                                                </li>-->
-<!--                                                <li class="item-has-children"><a href="course.php">Health & Fitness</a>-->
-<!--                                                </li>-->
-<!--                                                <li><a href="course.php">Data Science</a></li>-->
-<!--                                                <li><a href="course.php">Marketing</a></li>-->
-<!--                                                <li><a href="course.php">Photography</a></li>-->
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -255,16 +247,8 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="menu-item-has-children"><a aria-current="act" href="/du_an_1">Home</a>
-
                                         </li>
                                         <li class="menu-item-has-children"><a href="/du_an_1?act=course">Course</a>
-                                            <!-- <ul class="sub-menu">
-                                               <li><a href="course.html">Course 1</a></li>
-                                               <li><a href="course-2.html">Course 2</a></li>
-                                               <li><a href="course-3.html">Course 3</a></li>
-                                               <li><a href="course-4.html">Course 4</a></li>
-                                               <li><a href="course-details.html">course-details</a></li>
-                                            </ul> -->
                                         </li>
                                         <li class="menu-item-has-children"><a href="/du_an_1?act=cart">cart</a>
 
@@ -273,39 +257,10 @@
                                             <ul class="sub-menu">
                                                 <li><a href="/du_an_1?act=about">About</a></li>
                                                 <li class="menu-item-has-children"><a  href="/du_an_1?act=instructor">instructor</a>
-                                                    <!-- <ul class="sub-menu">
-                                                       <li><a href="instructor.php">instructor</a></li>
-                                                       <li><a href="instructor-profile.html">instructor profile</a></li>
-                                                       <li><a href="become-instructor.php">become instructor</a></li>
-                                                    </ul> -->
                                                 </li>
                                                 <li class="menu-item-has-children"><a href="/du_an_1?act=zoom_class">zoom class</a>
-                                                    <!-- <ul class="sub-menu">
-                                                       <li><a href="zoom-class.php">zoom class</a></li>
-                                                       <li><a href="zoom-class-detalis.html">zoom class details</a></li>
-                                                    </ul> -->
                                                 </li>
-                                                <!-- <li class="menu-item-has-children"><a href="blog.html">blog</a>
-                                                   <ul class="sub-menu">
-                                                      <li><a href="blog.html">blog</a></li>
-                                                      <li><a href="blog-details.html">blog details</a></li>
-                                                   </ul>
-                                                </li>
-                                                <li class="menu-item-has-children"><a href="event.html">event</a>
-                                                   <ul class="sub-menu">
-                                                      <li><a href="event.html">event</a></li>
-                                                      <li><a href="event-details.html">event details</a></li>
-                                                   </ul>
-                                                </li>
-                                                <li><a href="membership.html">membership plan</a></li>
-                                                <li class="menu-item-has-children"><a href="faq-page.html">FAQ page</a>
-                                                   <ul class="sub-menu">
-                                                      <li><a href="faq-page.html">FAQ page</a></li>
-                                                      <li><a href="faq-details.html">FAQ details</a></li>
-                                                   </ul>
-                                                </li>
-                                                <li><a href="404-page.html">404 pages</a></li>
-                                                <li><a href="contact.html">contact</a></li> -->
+
                                             </ul>
                                         </li>
                                     </ul>

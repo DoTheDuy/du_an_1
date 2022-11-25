@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 if (isset($_POST['btn-login'])) {
     $ten_khach_hang = $_POST['ten_khach_hang'];
     $mat_khau = $_POST['mat_khau'];

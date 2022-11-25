@@ -1,4 +1,29 @@
 
+<?php
+
+//if(isset($_POST['add-comment'])) {
+//    $content = $_POST['content'];
+//    $id_user = $_SESSION['user']['id'];
+//    $name_user = $_SESSION['user']['username'];
+//    $id_product = $row['id'];
+//    $date_comment = date('d-m-y h:i:s');
+//    insert_comment($content, $id_user, $name_user, $id_product, $date_comment);
+//}
+$row = get_one_product($ma_khoa_hoc);
+if(isset($_POST['add-cart'])) {
+    $hinh = $row['hinh'];
+    $ten_khoa_hoc = $row['ten_khoa_hoc'];
+    $gia_khuyen_mai = $row['gia_khuyen_mai'];
+    $quantity = $_POST['quantity'];
+    $total = $gia_khuyen_mai * $quantity;
+    $arr = [$hinh, $ten_khoa_hoc, $gia_khuyen_mai, $quantity, $total];
+    if(isset($_SESSION['mycart']) === false) {
+        $_SESSION['mycart'] = [];
+    }
+    array_push($_SESSION['mycart'],$arr);
+}
+//$results = get_all_comment_by_id($row['id']);
+?>
 <main style="margin-top: 100px">
     <!-- hero-area-start -->
     <div class="hero-arera course-item-height" data-background="Views/client/assets/img/slider/course-slider.jpg">
@@ -25,12 +50,14 @@
     <!-- hero-area-end -->
     <!-- course-details-area-start -->
     <section class="course-detalis-area pb-90">
+        <form action="" method="post">
         <div class="container">
             <div class="row">
                 <div class=" col-xxl-8 col-xl-8">
                     <div class="course-detalis-wrapper mb-30">
+
                         <div class="course-heading mb-20">
-                            <h2  > WordPress Development Course for Plugins & Themes</h2>
+                            <h2  > <?php echo $row['ten_khoa_hoc']; ?></h2>
 
                             <div class="course-star">
                                 <ul>
@@ -79,11 +106,7 @@
                             <div class="course-Description">
                                 <h4>Description</h4>
                             </div>
-                            <p>This course has been designed by two professional Data Scientists so that we can
-                                share our knowledge and help you learn complex theory, algorithms, and coding
-                                libraries in a simple way. We will walk you step-by-step into the World of Machine
-                                Learning. With every tutorial, you will develop new skills and improve your
-                                understanding of this challenging yet lucrative sub-field of Data Science.</p>
+                            <p><?php echo $row['mo_ta_tom_tat']; ?></p>
                         </div>
                         <div class="course-learn-wrapper">
                             <div class="course-learn">
@@ -651,6 +674,7 @@
 
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-8 col-md-8">
                     <div class="course-video-widget">
@@ -663,7 +687,7 @@
                                 </div>
                             </div>
                             <div class="course-video-price">
-                                <span>$147.00</span>
+                                <span>$<?php echo $row['gia_khuyen_mai']; ?></span>
                             </div>
                             <div class="course-video-body">
                                 <ul>
@@ -700,7 +724,7 @@
                                             <span>Category</span>
                                         </div>
                                         <div class="video-corse-info">
-                                            <span>Data Science</span>
+                                            <span >Data Science</span>
                                         </div>
                                     </li>
                                     <li>
@@ -742,9 +766,12 @@
                                 </ul>
                             </div>
                             <div class="video-wishlist">
-                                <a href="cart.html" class="video-cart-btn"><i class="fal fa-shopping-cart"></i>Add
-                                    to
-                                    cart</a>
+
+                                <button name="add-cart" >
+                                    <a href="#" name="add-cart" class="video-cart-btn" onclick="alert('Thêm thành công!')"   onclick="alert('Thêm thành công!')"><i class="fal fa-shopping-cart"></i>Add
+                                        to
+                                        cart</a>
+                                </button>
                                 <a href="wishlist.html" class="video-wishlist-btn"><i class="far fa-heart"></i>Add
                                     to
                                     Wishlist</a>
@@ -762,6 +789,7 @@
                 </div>
             </div>
         </div>
+        </form>
     </section>
 
 </main>

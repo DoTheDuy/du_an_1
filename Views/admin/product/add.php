@@ -97,7 +97,7 @@ if(isset($_POST["btn-add"])){
     </div>
     <div class="col-md-6">
         <label for="validationCustom06" class="form-label fw-bold">Mô tả</label>
-        <textarea name="mo_ta_tom_tat" class="form-control" id="validationCustom06" cols="30" rows="5" required></textarea>
+        <textarea name="mo_ta_tom_tat" class="form-control" id="validationCustom06" cols="50" rows="8" required></textarea>
         <div class="invalid-feedback">
             Vui lòng nhập mô tả
         </div>

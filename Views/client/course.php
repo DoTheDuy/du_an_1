@@ -1,4 +1,26 @@
+<?php
+//    require "Models/client/index.php";
+//?>
+<?php
+$loai_khoa_hoc ="get_all_loai_khoa_hoc";
+if(isset($_GET['category'])) {
+    $ma_loai = $_GET['category'];
+    foreach ($loai_khoa_hoc as $key => $item){
+        if($item['ma_loai'] == $ma_loai) {
+            echo $item['ten_khoa_hoc'];
+            break;
+        }
+    }
+}
 
+ ?>
+<?php
+if(isset($_GET['idPro'])) {
+    $ma_khoa_hoc = $_GET['idPro'];
+    $row = get_one_product($ma_khoa_hoc);
+}
+
+?>
 <main  style="margin-top: 100px">
 
     <!-- hero-area-start -->
@@ -149,11 +171,15 @@
                     <div class="row">
                         <?php foreach ($results as $key => $value) { ?>
                             <div class="col-xl-4 col-lg-6 col-md-6">
+
                                 <div class="course-wrapper-2 mb-30">
 
                                     <div class="student-course-img">
+                                        <a href="/du_an_1?act=course_detail&idPro=<?php echo $value['ma_khoa_hoc'];?>">
                                         <img src="Views/images/<?php echo $value['hinh']?>" alt="courde-img">
+                                        </a>
                                     </div>
+
                                     <div class="student-course-footer">
                                         <div class="student-course-linkter">
                                             <div class="portfolio-price">
@@ -167,7 +193,7 @@
                                         </div>
                                         <div class="portfolio-user">
                                             <div class="user-icon">
-                                                <a href="instructor-profile.html"><?php echo $value['mo_ta_tom_tat']?></a>
+
                                             </div>
                                         </div>
                                         <div class="course-deteals-btn">

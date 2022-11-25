@@ -10,6 +10,7 @@
             <th scope="col">Tên</th>
             <th scope="col">Hình ảnh</th>
             <th scope="col">Thông tin</th>
+            <th scope="col">Thông tin chi tiet</th>
             <th scope="col">Trạng thái</th>
         </tr>
         </thead>
@@ -21,6 +22,7 @@
                 <td style="width: 200px;"><?php echo $value['ten_giang_vien'] ?></td>
                 <td><img src="Views/images/<?php echo $value['hinh_giang_vien'];?>" style="width: 50px;height: 50px;border-radius: 50%;" alt="ảnh giảng viên"></td>
                 <td style="width: 200px;" ><?php echo $value['thong_tin_giang_vien'] ?></td>
+                <td style="width: 200px;" ><?php echo $value['thong_tin_chi_tiet'] ?></td>
                 <td><?php echo $value['trang_thai'] ?></td>
                 <td>
                     <button type="button" class="btn btn-primary" onclick="location.href='?page=giangvien&act=edit&editId=<?php echo $value['ma_giang_vien']; ?>'">Sửa</button>
