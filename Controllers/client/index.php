@@ -59,6 +59,7 @@ include "Views/client/header.php";
                 break;
         }
     }else{
+        $khoa_hoc = get_6_product_new();
         include "Views/client/home.php";
 }
 include "Views/client/footer.php";
