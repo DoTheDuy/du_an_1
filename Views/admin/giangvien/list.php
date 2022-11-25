@@ -12,6 +12,7 @@
             <th scope="col">Thông tin</th>
             <th scope="col">Thông tin chi tiet</th>
             <th scope="col">Trạng thái</th>
+            <th scope="col">Loại</th>
         </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -24,6 +25,7 @@
                 <td style="width: 200px;" ><?php echo $value['thong_tin_giang_vien'] ?></td>
                 <td style="width: 200px;" ><?php echo $value['thong_tin_chi_tiet'] ?></td>
                 <td><?php echo $value['trang_thai'] ?></td>
+                <td><?php echo $value['ma_loai'] ?></td>
                 <td>
                     <button type="button" class="btn btn-primary" onclick="location.href='?page=giangvien&act=edit&editId=<?php echo $value['ma_giang_vien']; ?>'">Sửa</button>
                     <button type="button" class="btn btn-danger" onclick="

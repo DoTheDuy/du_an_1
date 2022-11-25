@@ -1,7 +1,6 @@
 <?php
-    require "Models/db.php";
-    function add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai) {
-        $sql = "INSERT INTO giang_vien VALUES (null,'$ten_giang_vien', '$hinh_giang_vien', '$thong_tin_giang_vien','$thong_tin_chi_tiet', '$trang_thai')";
+    function add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai,$ma_loai) {
+        $sql = "INSERT INTO giang_vien VALUES (null,'$ten_giang_vien', '$hinh_giang_vien', '$thong_tin_giang_vien','$thong_tin_chi_tiet', '$trang_thai','$ma_loai')";
         getData($sql,'');
     }
 
@@ -19,9 +18,9 @@
         $result = getData($sql, "FETCH_ONE");
         return $result;
     }
-    function edit_giangvien($ma_giang_vien, $ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai){
+    function edit_giangvien($ma_giang_vien, $ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai,$ma_loai){
         $sql = "UPDATE giang_vien SET ten_giang_vien='$ten_giang_vien', hinh_giang_vien='$hinh_giang_vien', thong_tin_giang_vien='$thong_tin_giang_vien',thong_tin_chi_tiet='$thong_tin_chi_tiet',
-         trang_thai='$trang_thai' WHERE ma_giang_vien='$ma_giang_vien'";
+         trang_thai='$trang_thai',ma_loai='$ma_loai' WHERE ma_giang_vien='$ma_giang_vien'";
         getData($sql,'');
     }
 ?>

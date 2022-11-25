@@ -6,6 +6,7 @@ if(isset($_POST["btn-add"])){
     $thong_tin_giang_vien = $_POST["thong_tin_giang_vien"];
     $thong_tin_chi_tiet = $_POST["thong_tin_chi_tiet"];
     $trang_thai = $_POST["trang_thai"];
+    $ma_loai = $_POST["ma_loai"];
     if(isset($_FILES["hinh_giang_vien"])){
         $target_dir = "Views/images/";
         $nameImg = $_FILES["hinh_giang_vien"]["name"];
@@ -31,7 +32,7 @@ if(isset($_POST["btn-add"])){
     }
     // Cau lenh insert add data
     if (!$error) {
-        add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai);
+        add_giangvien($ten_giang_vien, $hinh_giang_vien, $thong_tin_giang_vien,$thong_tin_chi_tiet, $trang_thai,$ma_loai);
         $message = "Thêm thành công!";
     }
 }
@@ -67,6 +68,18 @@ if(isset($_POST["btn-add"])){
         <textarea name="thong_tin_chi_tiet" class="form-control" id="validationCustom06" cols="50" rows="8" required></textarea>
         <div class="invalid-feedback">
             Vui lòng nhập thông tin
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom04" class="form-label fw-bold">Loại khóa học</label>
+        <select class="form-select" name="ma_loai" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <?php foreach ($loai_khoa_hoc as $key => $value) { ?>
+                <option value="<?php echo $value['ma_loai']; ?>" ><?php echo $value['ten_loai']; ?></option>
+            <?php } ?>
+        </select>
+        <div class="invalid-feedback">
+            Vui lòng chọn khóa học
         </div>
     </div>
     <div class="col-md-6">

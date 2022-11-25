@@ -18,6 +18,11 @@ function get_all_giangvien() {
     $giang_vien = getData($sql_get_categoty, "FETCH_ALL");
     return $giang_vien;
 }
+function get_all_giangvien_home() {
+    $sql_get_categoty = "SELECT * FROM khoa_hoc";
+    $khoa_hoc = getData($sql_get_categoty, "FETCH_ALL");
+    return $khoa_hoc;
+}
 function get_all_lop() {
     $sql = "SELECT * FROM lop";
     $lop = getData($sql, "FETCH_ALL");
@@ -61,7 +66,16 @@ function get_all_comment_by_id($id_product) {
     $results = getData($sql, 'FETCH_ALL');
     return $results;
 }
-
+function get_6_product_new() {
+    $sql = "SELECT * FROM khoa_hoc WHERE 32 ORDER BY ma_khoa_hoc DESC LIMIT 0,6";
+    $khoa_hoc = getData($sql, "FETCH_ALL");
+    return $khoa_hoc;
+}
+//function get_6_giangvien_new() {
+//    $sql = "SELECT * FROM giang_vien WHERE 9 ORDER BY ma_giang_vien DESC LIMIT 0,6";
+//    $giang_vien = getData($sql, "FETCH_ALL");
+//    return $giang_vien;
+//}
 
 function loadall_pro_top10(){
     $sql = "SELECT * FROM khoa_hoc WHERE 1 ORDER BY view DESC LIMIT 0,10";
@@ -71,6 +85,11 @@ function loadall_pro_top10(){
 
 function get_product_by_category($ma_khoa_hoc){
     $sql = "SELECT * FROM khoa_hoc WHERE ma_loai = '$ma_khoa_hoc'";
+    $listpro = getData($sql, "FETCH_ALL");
+    return $listpro;
+}
+function get_giangvien_by_category($ma_giang_vien){
+    $sql = "SELECT * FROM giang_vien WHERE ma_loai = '$ma_giang_vien'";
     $listpro = getData($sql, "FETCH_ALL");
     return $listpro;
 }
