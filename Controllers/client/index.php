@@ -35,6 +35,9 @@ include "Views/client/header.php";
             case 'about':
                 include  "Views/client/about.php";
                 break;
+            case "quenmk":
+                include  "Views/client/quenmk.php";
+                break;
             case 'register':
                 include  "Views/client/register.php";
                 break;

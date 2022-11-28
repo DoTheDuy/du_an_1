@@ -158,7 +158,7 @@ extract($_SESSION['user']);
 ?>
 <p class="text-center">Xin chào <?=$ten_khach_hang?>!!!</p>
 <form method="post" action="" class="mb">
-    <a href="?page=quenmk">Quên mật khẩu </a>
+    <a href="/du_an_1?act=quenmk">Quên mật khẩu </a>
     <br>
     <a href="?page=capnhattk">Cập nhật tài khoản</a>
     <br>
@@ -209,11 +209,12 @@ extract($_SESSION['user']);
             <span style="color: red;margin-top: 5px;"><?php echo isset($thongbao) ? $thongbao : ""; ?></span>
         </div>
     </div>
-</div>
+
 </form>
     <?php
 }
 ?>
+</div>
 <!-- sigin-area end-->
 
 <!-- signup-area-start -->

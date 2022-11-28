@@ -10,7 +10,7 @@ if (isset($_POST['btn-send'])) {
 }
 ?>
 
-<div>
+<div style="margin-top: 100px" >
     <div class="alert alert-danger" chuc_nang="alert">
         <h2 class="text-center">LẤY LẠI MẬT KHẨU</h2>
     </div>
