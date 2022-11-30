@@ -6,22 +6,22 @@
     <tr>
         <th scope="col">#</th>
         <th scope="col">ID</th>
-        <th scope="col">content</th>
-        <th scope="col">Name User</th>
-        <th scope="col">Id Product</th>
-        <th scope="col">Date Comment</th>
-        <th scope="col">Action</th>
+        <th scope="col">Nội Dung</th>
+        <th scope="col">Tên Khách Hàng</th>
+        <th scope="col">Mã Sản Phẩm</th>
+        <th scope="col">Ngày Bình Luận</th>
+        <th scope="col">Chức Năng</th>
     </tr>
     </thead>
     <tbody class="table-group-divider">
     <?php foreach ($results as $key => $value){ ?>
         <tr>
             <th scope="row"><input type="checkbox"></th>
-            <td><?php echo $value['id'] ?></td>
-            <td><?php echo $value['content'] ?></td>
-            <td><?php echo $value['name_user'] ?></td>
-            <td><?php echo $value['id_product'] ?></td>
-            <td><?php echo $value['date_comment'] ?></td>
+            <td><?php echo $value['ma_binh_luan'] ?></td>
+            <td><?php echo $value['noi_dung'] ?></td>
+            <td><?php echo $value['ten_khach_hang'] ?></td>
+            <td><?php echo $value['ma_khoa_hoc'] ?></td>
+            <td><?php echo $value['ngay_tao'] ?></td>
             <td>
                 <button
                     type="button"
@@ -29,7 +29,7 @@
                     onclick="
                     const result = confirm('Bạn có chắc chắn muốn xóa không?');
                     if(result){
-                    location.href='?page=comment&deleteId=<?php echo $value["id"]; ?>'
+                    location.href='?page=comment&deleteId=<?php echo $value["ma_binh_luan"]; ?>'
                     }"
                 >
                     Xóa

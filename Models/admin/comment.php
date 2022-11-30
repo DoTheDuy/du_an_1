@@ -1,24 +1,24 @@
 <?php
     require "Models/db.php";
-    function insert_comment($content, $id_user, $name_user,  $id_product, $date_comment) {
-        $sql = "INSERT INTO comments(content, id_user, id_product, date_comment) values('$content', '$id_user', '$id_product', '$name_user', '$date_comment')";
+    function insert_comment($noi_dung, $ma_khach_hang, $ten_khach_hang, $ma_khoa_hoc, $ngay_tao) {
+        $sql = "INSERT INTO binh_luan (noi_dung, ten_khach_hang, ma_khoa_hoc, ngay_tao) values('$noi_dung', '$ma_khach_hang', '$ten_khach_hang', '$ma_khoa_hoc' '$ngay_tao')";
         getData($sql, '');
     }
 
     function get_all_comment() {
-        $sql = "SELECT * FROM comments";
+        $sql = "SELECT * FROM binh_luan";
         $results = getData($sql, 'FETCH_ALL');
         return $results;
     }
 
-    function get_all_comment_by_id($id_product) {
-        $sql = "SELECT * FROM comments WHERE id_product= '$id_product' ORDER BY id DESC";
+    function get_all_comment_by_id($ma_khoa_hoc) {
+        $sql = "SELECT * FROM binh_luan WHERE ma_khoa_hoc= '$ma_khoa_hoc' ORDER BY ma_khoa_hoc DESC";
         $results = getData($sql, 'FETCH_ALL');
         return $results;
     }
 
-    function delete_comment($id) {
-        $sql = "DELETE FROM  comments WHERE id='$id'";
+    function delete_comment($ma_binh_luan) {
+        $sql = "DELETE FROM  binh_luan WHERE ma_binh_luan='$ma_binh_luan'";
         getData($sql, '');
     }
 ?>

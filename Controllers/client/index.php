@@ -15,7 +15,7 @@ include "Views/client/header.php";
                 include  "Views/client/course.php";
                 break;
             case 'cart':
-                include  "Views/client/cart.php";
+                include  "Views/client/register-course.php";
                 break;
             case 'instructor':
                 $results = get_all_giangvien();

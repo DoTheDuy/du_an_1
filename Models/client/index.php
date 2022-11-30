@@ -77,10 +77,10 @@ function get_6_product_new() {
 //    return $giang_vien;
 //}
 
-function loadall_pro_top10(){
-    $sql = "SELECT * FROM khoa_hoc WHERE 1 ORDER BY view DESC LIMIT 0,10";
-    $listpro = getData($sql, 'FETCH_ALL');
-    return $listpro;
+function get_top6(){
+    $sql = "SELECT * FROM khoa_hoc WHERE 1 ORDER BY ma_khoa_hoc DESC LIMIT 0,6";
+    $listtop6 = getData($sql, 'FETCH_ALL');
+    return $listtop6;
 }
 
 function get_product_by_category($ma_khoa_hoc){

@@ -1,15 +1,15 @@
 
 <?php
 
-//if(isset($_POST['add-comment'])) {
-//    $content = $_POST['content'];
-//    $id_user = $_SESSION['user']['id'];
-//    $name_user = $_SESSION['user']['username'];
-//    $id_product = $row['id'];
-//    $date_comment = date('d-m-y h:i:s');
-//    insert_comment($content, $id_user, $name_user, $id_product, $date_comment);
-//}
-$row = get_one_product($ma_khoa_hoc);
+if(isset($_POST['add-comment'])) {
+    $noi_dung = $_POST['noi_dung'];
+    $ma_khach_hang = $_SESSION['khach_hang']['ma_khach_hang'];
+    $ten_khach_hang = $_SESSION['khach_hang']['ten_khach_hang'];
+    $ma_khoa_hoc = $row['ma_khoa_hoc'];
+    $ngay_tao = date('d-m-y h:i:s');
+    insert_comment($noi_dung, $ma_khach_hang, $ten_khach_hang, $ma_khoa_hoc, $ngay_tao);
+}
+
 if(isset($_POST['add-cart'])) {
     $hinh = $row['hinh'];
     $ten_khoa_hoc = $row['ten_khoa_hoc'];
@@ -22,7 +22,8 @@ if(isset($_POST['add-cart'])) {
     }
     array_push($_SESSION['mycart'],$arr);
 }
-//$results = get_all_comment_by_id($row['id']);
+
+$results = get_all_comment_by_id($row['ma_binh_luan']);
 ?>
 <main style="margin-top: 100px">
     <!-- hero-area-start -->
@@ -560,90 +561,30 @@ if(isset($_POST['add-cart'])) {
                                 <h3>Reviews</h3>
                             </div>
                             <div class="course-review-item mb-30">
+                                <?php
+                                if (count($results) > 0) {
+                                foreach ($results as $key => $value) {?>
                                 <div class="course-reviews-img">
-                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-1.png"
-                                                     alt="image not found"></a>
+                                    <img class="rounded-circle shadow-1-strong me-3"
+                                         src="https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png" alt="avatar" width="40"
+                                         height="40" />
                                 </div>
                                 <div class="course-review-list">
-                                    <h5><a href="#">Sotapdi Kunda</a></h5>
+                                    <h5><?php echo $value['ten_khach_hang'];?></h5>
                                     <div class="course-start-icon">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>55 min ago</span>
+                                        <span><?php echo $value['ngay_tao'];?></span>
                                     </div>
-                                    <p>Very clean and organized with easy to follow tutorials, Exercises, and
-                                        solutions.
-                                        This course does start from the beginning with very little knowledge and
-                                        gives a
-                                        great overview of common tools used for data science and progresses into
-                                        more
-                                        complex concepts and ideas.</p>
+                                    <p><?php echo $value['noi_dung'];?></p>
                                 </div>
-                            </div>
-                            <div class="course-review-item mb-30">
-                                <div class="course-reviews-img">
-                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-2.png"
-                                                     alt="image not found"></a>
-                                </div>
-                                <div class="course-review-list">
-                                    <h5><a href="#">Samantha</a></h5>
-                                    <div class="course-start-icon">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>45 min ago</span>
-                                    </div>
-                                    <p>The course is good at explaining very basic intuition of the concepts. It
-                                        will get
-                                        you scratching the surface so to say. where this course is unique is the
-                                        implementation methods are so well defined Thank you to the team !.</p>
-                                </div>
-                            </div>
-                            <div class="course-review-item mb-30">
-                                <div class="course-reviews-img">
-                                    <a href="#"><img src="Views/client/assets/img/course/course-reviews-3.png"
-                                                     alt="image not found"></a>
-                                </div>
-                                <div class="course-review-list">
-                                    <h5><a href="#">Michell Mariya</a></h5>
-                                    <div class="course-start-icon">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span>30 min ago</span>
-                                    </div>
-                                    <p>This course is amazing..!
-                                        I started this course as a beginner and learnt a lot. Instructors are great.
-                                        Query
-                                        handling can be improved.Overall very happy with the course.</p>
-                                </div>
+                                <?php } } else { ?>
+                                    <span class="price-pro" style="margin-bottom: 20px;display: block">Chưa có bình luận nào!!</span>
+                                <?php } ?>
                             </div>
                         </div>
                         <div class="col-xl-12">
                             <div class="course-review-btn">
                                 <a id="show-review-box" class="edu-btn" href="javascript:void(0)">Write a Review</a>
                                 <div id="review-box" class="review-comment mt-45">
-                                    <div class="comment-title mb-20">
-                                        <p>Your email address will not be published. Required fields are marked *
-                                        </p>
-                                    </div>
-                                    <div class="comment-rating mb-20">
-                                        <span>Overall ratings</span>
-                                        <ul>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                        </ul>
-                                    </div>
                                     <div class="comment-input-box mb-15">
                                         <form action="#">
                                             <div class="row">
@@ -651,19 +592,9 @@ if(isset($_POST['add-cart'])) {
                                                         <textarea placeholder="Your review"
                                                                   class="comment-input comment-textarea mb-20"></textarea>
                                                 </div>
-                                                <div class="col-xxl-6">
-                                                    <div class="comment-input mb-20">
-                                                        <input type="text" placeholder="Your Name">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-6">
-                                                    <div class="comment-input mb-20">
-                                                        <input type="email" placeholder="Your Email">
-                                                    </div>
-                                                </div>
                                                 <div class="col-xxl-12">
                                                     <div class="comment-submit">
-                                                        <button type="submit" class="edu-btn">Submit</button>
+                                                        <button type="submit" class="edu-btn" name="add-comment">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
