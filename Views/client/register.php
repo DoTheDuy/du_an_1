@@ -9,7 +9,7 @@
     }
 ?>
 
-<div>
+<div style="margin-top: 300px">
     <div class="alert alert-danger" chuc_nang="alert">
         <h2 class="text-center">ĐĂNG KÝ THÀNH VIÊN</h2>
     </div>

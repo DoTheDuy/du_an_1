@@ -283,16 +283,13 @@
                             <div class="user-btn-inner p-relative d-none d-md-block">
                                 <div class="user-btn-wrapper">
                                     <div class="user-btn-content ">
-                                        <a class="user-btn-sign-in" href="javascript:void(0)">Sign In</a>
+                                        <a class="user-btn-sign-in" href="/du_an_1?act=signin">Sign In</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-none d-md-block">
-                                <a class="user-btn-sign-up edu-btn" href="javascript:void(0)">Sign Up</a>
+                                <a class="user-btn-sign-up edu-btn" href="/du_an_1?act=signup">Sign Up</a>
                             </div>
-
-<!--                                Tài khoản-->
-<!--                            </h4>-->
 
                             <div class="menu-bar d-xl-none ml-20">
                                 <a class="side-toggle" href="javascript:void(0)">
@@ -310,3 +307,72 @@
         </div>
     </div>
 </header>
+
+<?php
+//if(isset($_SESSION['user'])){
+//    extract($_SESSION['user']);
+//    ?>
+<!--    <div class="form-act-title flex">-->
+<!--                        <span class="icon-user">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">-->
+<!--                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />-->
+<!--                            </svg>-->
+<!--                        </span>-->
+<!--        <div>-->
+<!--            <p>Xin Chào</p>-->
+<!--            <p>--><?//=$full_name?><!--</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    --><?php
+//    if($role==1){
+//        echo '
+//                        <div class="notify">
+//                        <a href="admin/index.php" class="form-action">
+//                            <svg fill="none" viewBox="0 0 24 24" size="36" class="css-11md2ba" color="textSecondary"
+//                                        height="36" width="36" xmlns="http://www.w3.org/2000/svg">
+//                                <path fill-rule="evenodd" clip-rule="evenodd"
+//                                    d="M12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 13.9895 4.18351 15.8194 5.32851 17.2676C5.58317 16.4856 6.12054 15.8107 6.85621 15.3914L8.76361 14.2968C8.1448 13.5615 7.772 12.6122 7.772 11.5759V9.83689C7.772 7.50167 9.66479 5.60889 12 5.60889C14.3349 5.60889 16.229 7.50139 16.229 9.83689V11.5759C16.229 12.6132 15.8554 13.5631 15.2354 14.2986L17.1437 15.3908L17.1444 15.3912C17.8805 15.8106 18.4173 16.4856 18.6716 17.2674C19.8165 15.8192 20.5 13.9894 20.5 12C20.5 7.30558 16.6944 3.5 12 3.5ZM10.0133 15.3091C10.6056 15.6249 11.2819 15.8039 12 15.8039C12.7169 15.8039 13.3922 15.6255 13.984 15.3106L16.3999 16.6934L16.4013 16.6942C16.9789 17.0231 17.3365 17.6396 17.3365 18.3075V18.6164C16.8532 19.0067 16.3263 19.3451 15.7642 19.6232C14.9127 19.9671 13.6909 20.2625 12.0005 20.2625C10.3078 20.2625 9.08478 19.9663 8.23289 19.6217C7.67189 19.3439 7.14595 19.006 6.6635 18.6164V18.3075C6.6635 17.6402 7.0216 17.0234 7.59965 16.6942L7.6018 16.693L10.0133 15.3091ZM13.4184 13.9069C14.2043 13.428 14.729 12.5631 14.729 11.5759V9.83689C14.729 8.33038 13.5071 7.10889 12 7.10889C10.4932 7.10889 9.272 8.3301 9.272 9.83689V11.5759C9.272 12.5628 9.79594 13.4273 10.5809 13.9062C10.6523 13.9484 10.7542 14.0035 10.8812 14.0593C11.1657 14.1842 11.5558 14.3035 12.0005 14.3035C12.445 14.3035 12.8341 14.1846 13.1176 14.0602C13.2451 14.0042 13.3472 13.9489 13.4184 13.9069ZM2 12C2 14.9959 3.31741 17.684 5.40452 19.5168L5.42841 19.5438C5.49553 19.6189 5.59114 19.7182 5.71841 19.8332C5.97322 20.0636 6.35385 20.3562 6.88471 20.6435C7.10268 20.7615 7.34486 20.878 7.6128 20.9888C8.93735 21.6364 10.4262 22 12 22C13.5724 22 15.06 21.6371 16.3837 20.9905C16.6532 20.8792 16.8968 20.7621 17.1159 20.6435C17.6466 20.3561 18.0271 20.0635 18.2819 19.8331C18.4091 19.7181 18.5047 19.6187 18.5718 19.5437L18.5956 19.5167C20.6826 17.6839 22 14.9958 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+//                                    fill="currentColor"></path>
+//                            </svg>
+//                        </a>
+//                        </div>
+//                        ';
+//    }else{
+//        echo "";
+//    }
+//    ?>
+<!--    <div class="notify">-->
+<!--        <a href="index.php?act=logout" class="form-action">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" height="36" width="36">-->
+<!--                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />-->
+<!--            </svg>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    --><?php
+//}else{
+//?>
+<!--<a href="index.php?act=login" class="form-action">-->
+<!--    <div class="form-act-title form_form flex">-->
+<!--                            <span class="icon-user">-->
+<!--                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">-->
+<!--                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />-->
+<!--                                </svg>-->
+<!--                            </span>-->
+<!--        <p>Đăng nhập</p>-->
+<!--    </div>-->
+<!--</a>-->
+<!--<a href="index.php?act=signup" class="form-action">-->
+<!--    <div class="form-act-title form_form flex">-->
+<!--                            <span class="icon-user">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">-->
+<!--                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />-->
+<!--                            </svg>-->
+<!---->
+<!--                            </span>-->
+<!--        <p>Đăng ký</p>-->
+<!--    </div>-->
+<!--    --><?php //}?>
+<!--</a>-->
+
+
+

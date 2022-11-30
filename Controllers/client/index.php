@@ -38,6 +38,26 @@ include "Views/client/header.php";
             case "quenmk":
                 include  "Views/client/quenmk.php";
                 break;
+            case 'signup':
+                include  "Views/client/signup.php";
+                break;
+            case 'signin':
+                if (isset($_POST['btn-login'])) {
+                    $ten_khach_hang = $_POST['ten_khach_hang'];
+                    $mat_khau = $_POST['mat_khau'];
+                    $checkuser = checkuser($ten_khach_hang, $mat_khau);
+                    if(is_array($checkuser)){
+                        $_SESSION['user'] = $checkuser;
+                    }else{
+                        $thongbao = "Tài khoản không tồn tại vui lòng kiểm tra HOẶC đăng kí mới";
+                    }
+                }
+
+                if (isset($_POST['exit'])) {
+                    session_unset();
+                }
+                include  "Views/client/signin.php";
+                break;
             case 'register':
                 include  "Views/client/register.php";
                 break;
