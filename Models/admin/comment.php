@@ -12,7 +12,7 @@
     }
 
     function get_all_comment_by_id($ma_khoa_hoc) {
-        $sql = "SELECT * FROM binh_luan WHERE ma_khoa_hoc= '$ma_khoa_hoc' ORDER BY ma_khoa_hoc DESC";
+        $sql = "SELECT * FROM binh_luan WHERE ma_khoa_hoc= '$ma_khoa_hoc' ORDER BY id DESC";
         $results = getData($sql, 'FETCH_ALL');
         return $results;
     }

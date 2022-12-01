@@ -40,7 +40,7 @@ if(isset($_POST["btn-add"])){
 }
 ?>
 
-<div class="alert alert-success" chuc_nang="alert">
+<div class="alert alert-success" chuc_nang="alert" style="padding-left: ">
     <h2>QUẢN LÝ KHÓA HỌC</h2>
 </div>
 <form class="row g-3 needs-validation" action="" enctype="multipart/form-data" method="post" novalidate>

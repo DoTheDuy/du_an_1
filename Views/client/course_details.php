@@ -24,6 +24,7 @@ if(isset($_POST['add-cart'])) {
 }
 
 $results = get_all_comment_by_id($row['ma_binh_luan']);
+
 ?>
 <main style="margin-top: 100px">
     <!-- hero-area-start -->
@@ -39,8 +40,7 @@ $results = get_all_comment_by_id($row['ma_binh_luan']);
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item"><span>Courses</span></li>
-                                <li class="breadcrumb-item active" aria-current="page">MySQL Database : Beginner SQL
-                                    Database Design</li>
+                                <li class="breadcrumb-item active" aria-current="page"><?php echo $row['ten_khoa_hoc']; ?></li>
                             </ol>
                         </nav>
                     </div>
@@ -408,36 +408,6 @@ $results = get_all_comment_by_id($row['ma_binh_luan']);
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="course-instructors">
-                            <h3>instructors</h3>
-                            <div class="instructors-heading">
-                                <div class="instructors-img w-img">
-                                    <a href="instructor-profile.html"><img
-                                            src="Views/client/assets/img/course/course-instructors.png"
-                                            alt="image not found"></a>
-                                </div>
-                                <div class="instructors-body">
-                                    <h5><a href="instructor-profile.html">David Allberto</a></h5>
-                                    <span>Data Scientist, BDevs Ltd.</span>
-                                    <div class="intructors-review">
-                                        <i class="fas fa-star"></i>
-                                        <span>4.7 (54 reviews)</span>
-                                    </div>
-                                    <div class="instructors-footer">
-                                        <i class="fas fa-desktop"></i>
-                                        <span>3 Coursess</span>
-                                        <i class="far fa-user-friends"></i>
-                                        <span>78,742 Students</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="intructors-content">
-                                <p>Professionally, I come from the Data Science consulting space with experience in
-                                    finance, retail, transport and other industries. I was trained by the best
-                                    analytics mentors at Deloitte Australia and since starting on Udemy I have
-                                    passed on my knowledge to spread around the world</p>
                             </div>
                         </div>
                         <div class="student-feedback pt-45 ">

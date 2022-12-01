@@ -51,7 +51,7 @@ if(isset($_SESSION['user'])) {
                     <input type="text" name="ten_khach_hang" placeholder="Email or Username">
                 </div>
                 <div class="signup-wrapper">
-                    <input type="text" name="mat_khau" placeholder="Password">
+                    <input type="password" name="mat_khau" placeholder="Password">
                 </div>
                 <div class="signup-action">
                     <div class="course-sidebar-list">
